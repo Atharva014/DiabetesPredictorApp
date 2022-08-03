@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til1"
+                android:layout_width="300dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Glucose eg. 80"
+                app:boxBackgroundMode="outline"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed1"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til2"
+                android:layout_below="@id/til1"
+                android:layout_width="300dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Blood Pressure eg. 80"
+                app:boxBackgroundMode="outline"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed2"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til3"
+                android:layout_below="@id/til2"
+                android:layout_width="300dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Skin Thickness (mm) eg. 20"
+                app:boxBackgroundMode="outline"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed3"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til4"
+                android:layout_below="@id/til3"
+                android:layout_width="300dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Enter number of Pregnancies "
+                app:boxBackgroundMode="outline"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed4"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til5"
+                android:layout_below="@id/til4"
+                android:layout_width="300dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Insulin level (IU/mL) eg. 80"
+                app:boxBackgroundMode="outline"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed5"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til6"
+                android:layout_below="@id/til5"
+                android:layout_width="320dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Body Mass Index eg. 23.1"
+                app:boxBackgroundMode="outline"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed6"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til7"
+                android:layout_below="@id/til6"
+                android:layout_width="330dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Diabetes Pedigree Function eg. 0.52"
+                app:boxBackgroundMode="outline"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed7"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til8"
+                android:layout_below="@id/til7"
+                android:layout_width="300dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Age (years) eg. 34"
+                app:boxBackgroundMode="outline"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed8"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/til8"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#673AB7"
+                android:onClick="clear"
+                android:text="Clear" />
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/til8"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/b1"
+                android:backgroundTint="#673AB7"
+                android:onClick="check"
+                android:text="Predict" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
